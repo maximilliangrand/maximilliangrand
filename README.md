@@ -1,24 +1,70 @@
-# Hi, I'm Maxim 👋
+# Maxim Gagiev
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=flat-square&logo=vercel&logoColor=white)](https://maximilliangrand.vercel.app)
-[![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:maximgagiev@myg-media.com)
+**I build the production LLM, voice, and security systems businesses run on.**
+Co-founder of [MYG Media](https://myg-media.com) in Vienna — voice agents answering real
+clinic and club phone lines, post-quantum tooling, and the automation behind them.
 
-Co-CEO of MYG Media, where I build websites and AI automation for clients. Most of that work lives in private repos, so what you'll find here is mostly side projects I build to learn and tinker.
+[![Portfolio](https://img.shields.io/badge/Portfolio-0a0a0a?style=flat-square&logo=cloudflare&logoColor=F38020)](https://maxim-gagiev.pages.dev)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/maxim-gagiev/)
+[![Email](https://img.shields.io/badge/max@myg--media.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:max@myg-media.com)
+&nbsp;·&nbsp; Anthropic **Claude Certified Architect**
 
-When I'm not coding: Overwatch Top 500 (Hanzo / Sojourn).
+Most client work is private, so what is public here is the systems work: security,
+cryptography, and tools I wanted to exist.
 
-## A few things I've built
+## Featured
 
-- **[GREMLIN](https://github.com/maximilliangrand/gremlin)** · `Python` — a voice AI that interrupts your coding session with absurd challenges and feature demands. Built mostly for laughs.
-- **[NutriLens](https://github.com/maximilliangrand/NutriLens)** · `Swift` — iOS calorie tracker: take a photo of your meal and it estimates the rest.
-- **[OpenBuild](https://github.com/maximilliangrand/openbuild)** · `TypeScript / Vue` — a drag-and-drop website builder with a component system and one-click deploy.
-- **[Rustchain](https://github.com/maximilliangrand/rustchain)** · `Rust` — a blockchain from scratch: ed25519 signatures, proof-of-work, Merkle trees, and P2P networking.
-- **[BrainVault](https://github.com/maximilliangrand/brainvault)** · `TypeScript / Tauri` — local-first notes with markdown, wiki links, a graph view, and a browser extension.
-- **[StartupCouncilAI](https://github.com/maximilliangrand/StartupCouncilAI)** · `TypeScript / Next.js` — a panel of AI advisors that debate and analyze business questions.
-- **[Code Translator](https://github.com/maximilliangrand/code-translator)** · `Python` — translates code between languages across several AI providers, with a VS Code extension.
+**[Urfael](https://github.com/maximilliangrand/urfael)** · `JavaScript · Electron · MCP` · MIT
+A self-hosted, voice-capable AI assistant built blast-radius-first. The brain listens on a unix
+socket with **zero TCP ports**, untrusted turns run a no-egress read-only profile, and plugins
+load as data inside a `--network none` container, sha-pinned at consent.
 
-A few more in the pinned repos below.
+It ships a security claim you can run instead of read:
 
-## Tools I reach for
+```bash
+npm run security   # boots the real daemon, attacks it, prints a pass/fail table
+# → 11/11 real-world attack classes resisted · 128/128 checks passed
+```
 
-TypeScript, Python, Rust, Swift · React, Vue, Next.js · Node, FastAPI · Postgres, SQLite · Docker, Vercel
+44,000 lines across 254 modules with **zero runtime dependencies**, under **1,400 passing tests**.
+
+**[Rustchain](https://github.com/maximilliangrand/rustchain)** · `Rust`
+A blockchain from scratch with no framework: ed25519 signatures, proof-of-work consensus,
+Merkle trees, a wallet, and peer-to-peer networking. Signature verification binds the signing
+key to the sender's address, so a valid signature from an unrelated key is refused.
+
+**[Forge](https://github.com/maximilliangrand/forge)** · `TypeScript · Electron`
+Bulk media tooling — AI image and video upscaling, batch compression, audio conversion.
+GPU-accelerated, entirely local, no uploads or accounts. Shipped for macOS, Windows and Linux.
+
+**[BrainVault](https://github.com/maximilliangrand/brainvault)** · `TypeScript · Tauri`
+Local-first notes with markdown, wiki links, a force-directed graph view, and a browser
+extension. Your notes never leave your machine.
+
+**[OpenBuild](https://github.com/maximilliangrand/openbuild)** · `TypeScript · Vue`
+An open-source visual website builder: drag-and-drop canvas, reusable component system,
+one-click deploy.
+
+**[Code Translator](https://github.com/maximilliangrand/code-translator)** · `Python`
+Translates code between languages across several AI providers, with a VS Code extension.
+
+**[StartupCouncilAI](https://github.com/maximilliangrand/StartupCouncilAI)** · `TypeScript · Next.js`
+A panel of AI advisors that debate a business question and return a synthesis, not one opinion.
+
+**[GREMLIN](https://github.com/maximilliangrand/gremlin)** · `Python`
+A voice AI that interrupts your coding session with absurd feature demands. Built for laughs,
+kept because it is genuinely funny.
+
+## Stack
+
+`TypeScript` `Python` `Rust` `Swift` · `React` `Next.js` `Vue` `Tailwind` · `Node` `FastAPI`
+`Electron` `Tauri` · `PostgreSQL` `Supabase` `SQLite` · `Docker` `Cloudflare` `AWS` `Railway`
+
+**AI:** LLM orchestration (Claude, GPT, Gemini, Mistral), MCP servers and clients, agentic
+systems, RAG, ElevenLabs conversational voice
+**Security:** post-quantum readiness (NIST FIPS 203/204/205, CNSA 2.0), adversarial red-teaming
+of agent systems, prompt-injection containment, sandbox and capability design
+
+---
+
+<sub>Vienna, Austria · German / English / Russian · Overwatch Top 500, former pro-league competitor</sub>
