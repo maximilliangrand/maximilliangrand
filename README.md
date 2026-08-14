@@ -1,7 +1,7 @@
 # Maxim Gagiev
 
 **I build the production LLM, voice, and security systems businesses run on.**
-Co-founder of [MYG Media](https://myg-media.com) in Vienna — voice agents answering real
+Co-founder of [MYG Media](https://myg-media.com) in Vienna: voice agents answering real
 clinic and club phone lines, post-quantum tooling, and the automation behind them.
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-0a0a0a?style=flat-square&logo=cloudflare&logoColor=F38020)](https://maxim-gagiev.pages.dev)
@@ -26,7 +26,7 @@ npm run security   # boots the real daemon, attacks it, prints a pass/fail table
 # → 11/11 real-world attack classes resisted · 128/128 checks passed
 ```
 
-44,000 lines across 254 modules with **zero runtime dependencies**, under **1,400 passing tests**.
+28,000 lines of source across 130 modules, **zero runtime dependencies**, ~1,400 passing tests.
 
 **[Rustchain](https://github.com/maximilliangrand/rustchain)** · `Rust`
 A blockchain from scratch with no framework: ed25519 signatures, proof-of-work consensus,
@@ -34,34 +34,23 @@ Merkle trees, a wallet, and peer-to-peer networking. Signature verification bind
 key to the sender's address, so a valid signature from an unrelated key is refused.
 
 **[Forge](https://github.com/maximilliangrand/forge)** · `TypeScript · Electron`
-Bulk media tooling — AI image and video upscaling, batch compression, audio conversion.
+Bulk media tooling: AI image and video upscaling, batch compression, audio conversion.
 GPU-accelerated, entirely local, no uploads or accounts. Shipped for macOS, Windows and Linux.
 
-**[BrainVault](https://github.com/maximilliangrand/brainvault)** · `TypeScript · Tauri`
-Local-first notes with markdown, wiki links, a force-directed graph view, and a browser
-extension. Your notes never leave your machine.
+## Also built
 
-**[OpenBuild](https://github.com/maximilliangrand/openbuild)** · `TypeScript · Vue`
-An open-source visual website builder: drag-and-drop canvas, reusable component system,
-one-click deploy.
-
-**[Code Translator](https://github.com/maximilliangrand/code-translator)** · `Python`
-Translates code between languages across several AI providers, with a VS Code extension.
-
-**[StartupCouncilAI](https://github.com/maximilliangrand/StartupCouncilAI)** · `TypeScript · Next.js`
-A panel of AI advisors that debate a business question and return a synthesis, not one opinion.
-
-**[GREMLIN](https://github.com/maximilliangrand/gremlin)** · `Python`
-A voice AI that interrupts your coding session with absurd feature demands. Built for laughs,
-kept because it is genuinely funny.
+**[BrainVault](https://github.com/maximilliangrand/brainvault)** · local-first notes with wiki links and a graph view; nothing leaves your machine · `Tauri`
+**[OpenBuild](https://github.com/maximilliangrand/openbuild)** · open-source drag-and-drop website builder with one-click deploy · `Vue`
+**[Code Translator](https://github.com/maximilliangrand/code-translator)** · translates code between languages across AI providers, with a VS Code extension · `Python`
+**[StartupCouncilAI](https://github.com/maximilliangrand/StartupCouncilAI)** · a panel of AI advisors that debate a business question and return a synthesis · `Next.js`
+**[GREMLIN](https://github.com/maximilliangrand/gremlin)** · a voice AI that interrupts your coding session with absurd feature demands · `Python`
 
 ## Stack
 
-`TypeScript` `Python` `Rust` `Swift` · `React` `Next.js` `Vue` `Tailwind` · `Node` `FastAPI`
-`Electron` `Tauri` · `PostgreSQL` `Supabase` `SQLite` · `Docker` `Cloudflare` `AWS` `Railway`
+`TypeScript` `Python` `Rust` · `Node` `Next.js` `Electron` `Tauri` · `PostgreSQL` `Docker` `Cloudflare`
 
-**AI:** LLM orchestration (Claude, GPT, Gemini, Mistral), MCP servers and clients, agentic
-systems, RAG, ElevenLabs conversational voice
+**AI:** LLM orchestration (Claude, GPT, Gemini), MCP servers and clients, agentic systems, RAG,
+ElevenLabs conversational voice
 **Security:** post-quantum readiness (NIST FIPS 203/204/205, CNSA 2.0), adversarial red-teaming
 of agent systems, prompt-injection containment, sandbox and capability design
 
