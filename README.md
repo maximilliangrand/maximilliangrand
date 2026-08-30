@@ -10,7 +10,26 @@ clinic and club phone lines, post-quantum tooling, and the automation behind the
 &nbsp;·&nbsp; Anthropic **Claude Certified Architect**
 
 Most client work is private, so what is public here is the systems work: security,
-cryptography, and tools I wanted to exist.
+cryptography, tools I wanted to exist, and fixes upstreamed into libraries you already ship.
+
+## Merged upstream
+
+Bugs I found and fixed in libraries a large part of the ecosystem depends on. Each was
+reproduced against the published release and shipped with a test that fails before the fix and
+passes after, and merged by the maintainers themselves.
+
+- **[PostCSS](https://github.com/postcss/postcss/pull/2135)** and its **[parser tests](https://github.com/postcss/postcss-parser-tests/pull/32)** · a rule end-offset that shifted when whitespace preceded the semicolon · merged by Andrey Sitnik, the author of PostCSS
+- **[immer](https://github.com/immerjs/immer/pull/1289)** · structural sharing silently lost on no-op array mutations, defeating memoization · merged by Mark Erikson
+- **[jose](https://github.com/panva/jose/pull/895)** · a JWE the library produced but could not decrypt back, against RFC 7516 · merged by Filip Skokan
+- **[Cloudflare workers-sdk](https://github.com/cloudflare/workers-sdk/pull/15151)** · wrangler misparsing trailing commas in config · merged
+- **[commitlint](https://github.com/conventional-changelog/commitlint/pull/4968)** · scoped `conventional-changelog` presets whose parser options were silently dropped · merged
+- **[PapaParse](https://github.com/mholt/PapaParse/pull/1140)** · Date values mangled on unparse · merged
+- **[js-base64](https://github.com/dankogai/js-base64/pull/192)** · a one-character surrogate-range typo that corrupted Unicode round-trips · merged
+
+More reproduced fixes are in review at **highlight.js**, **multiformats**, **firecrawl/pdf-inspector**,
+**n8n-mcp**, **hyperresearch**, and **d3-array**. Most were found by testing a library against the
+thing it claims to obey (an RFC, a reference implementation, exact arithmetic) rather than against
+its own test suite.
 
 ## Featured
 
@@ -28,10 +47,18 @@ npm run security   # boots the real daemon, attacks it, prints a pass/fail table
 
 28,000 lines of source across 130 modules, **zero runtime dependencies**, ~1,400 passing tests.
 
+**[consilium](https://github.com/maximilliangrand/consilium)** · `TypeScript` · MIT
+Deterministic orchestration for LLM agent councils. Fan out independent hypotheses, adversarially
+refute each, converge on the survivors: reliability from structure, not a bigger model. Zero runtime
+dependencies, model-agnostic behind one runner seam, and every pattern is unit-testable with a mock,
+no API key required.
+
 **[Rustchain](https://github.com/maximilliangrand/rustchain)** · `Rust`
-A blockchain from scratch with no framework: ed25519 signatures, proof-of-work consensus,
-Merkle trees, a wallet, and peer-to-peer networking. Signature verification binds the signing
-key to the sender's address, so a valid signature from an unrelated key is refused.
+A blockchain from scratch with no framework: ed25519 signatures, proof-of-work with difficulty
+retargeting, heaviest-work fork choice with median-time-past, Merkle trees, a wallet, and real
+length-prefixed TCP peer-to-peer. Hardened to be verified rather than trusted: canonical hashing,
+a panic-free library under a clippy deny gate, property and fuzz tests, a multi-node reconvergence
+test over real sockets, a threat model, and CI. 115 tests, clippy clean at `-D warnings`.
 
 **[Forge](https://github.com/maximilliangrand/forge)** · `TypeScript · Electron`
 Bulk media tooling: AI image and video upscaling, batch compression, audio conversion.
