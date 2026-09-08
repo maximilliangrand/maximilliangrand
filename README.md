@@ -1,35 +1,34 @@
 # Maxim Gagiev
 
-**I build the production LLM, voice, and security systems businesses run on.**
-Co-founder of [MYG Media](https://myg-media.com), Vienna. Anthropic **Claude Certified Architect**.
+**AI and backend engineer based in Vienna.** I build LLM and voice applications, agent tooling, and the services behind them. Co-founder of [MYG Media](https://myg-media.com). Open to AI engineering and backend roles.
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-0a0a0a?style=flat-square&logo=cloudflare&logoColor=F38020)](https://maxim-gagiev.pages.dev)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/maxim-gagiev/)
-[![Email](https://img.shields.io/badge/max@myg--media.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:max@myg-media.com)
+[Portfolio](https://maxim-gagiev.pages.dev) · [LinkedIn](https://www.linkedin.com/in/maxim-gagiev/) · [Email](mailto:max@myg-media.com)
 
-## Merged upstream
+## Selected Work
 
-Bugs I found and fixed in libraries much of the ecosystem ships, each reproduced on the published
-release with a failing-then-passing test and merged by the maintainers:
+- **[Nightshift](https://github.com/maximilliangrand/nightshift)**: a supervisor for unattended agent processes, with runtime limits, usage metering, process cleanup, and run reports. Its failure-case suite and documentation cover platform and metering limitations.
+- **[Urfael](https://github.com/maximilliangrand/urfael)**: a local personal assistant with persistent memory, voice, and restricted tool access for untrusted messages. Includes a threat model, automated tests, and a separately run live security benchmark. A personal project, not an independently audited security product.
+- **[Rustchain](https://github.com/maximilliangrand/rustchain)**: an educational Rust blockchain with heaviest-work fork choice, signed transactions, property tests, and multi-node tests over TCP.
 
-**[PostCSS](https://github.com/postcss/postcss/pull/2135)** and its [parser tests](https://github.com/postcss/postcss-parser-tests/pull/32) (merged by its author Andrey Sitnik) · **[immer](https://github.com/immerjs/immer/pull/1289)** (by Mark Erikson) · **[jose](https://github.com/panva/jose/pull/895)** (by Filip Skokan) · **[Cloudflare workers-sdk](https://github.com/cloudflare/workers-sdk/pull/15151)** · **[commitlint](https://github.com/conventional-changelog/commitlint/pull/4968)** · **[PapaParse](https://github.com/mholt/PapaParse/pull/1140)** · **[js-base64](https://github.com/dankogai/js-base64/pull/192)**
+For client work, see [a support assistant built around grounding and human handoff](case-studies/support-assistant.md). The anonymized account explains my implementation responsibilities, why I used prompt caching instead of a vector database, and what the recorded evaluation does and does not establish.
 
-More in review at highlight.js, multiformats, firecrawl/pdf-inspector, and others. Most were found
-by testing a library against the thing it claims to obey (an RFC, a reference implementation, exact
-arithmetic) rather than against its own test suite.
+## Accepted Upstream Contributions
 
-## Featured
+I investigate reproducible failures, add regression tests, and work through maintainer review. Selected examples:
 
-**[Urfael](https://github.com/maximilliangrand/urfael)** · a blast-radius-first AI assistant. Zero TCP ports, untrusted turns run no-egress and read-only, plugins load in a `--network none` container. `npm run security` attacks the live daemon and prints a table: 11/11 real-world attack classes resisted, ~1,400 tests, zero runtime deps.
+| Project | Contribution |
+| --- | --- |
+| [Hermes Agent](https://github.com/NousResearch/hermes-agent/pull/104805) | Preserve completed background-process results across a headless parent's exit. Commits incorporated via [#104949](https://github.com/NousResearch/hermes-agent/pull/104949), with maintainer follow-up fixes. |
+| [jose](https://github.com/panva/jose/pull/895) | Recheck JWE header disjointness after generated key-management parameters are added, including the multi-recipient path. |
+| [n8n-mcp](https://github.com/czlonkowski/n8n-mcp/pull/1040) | Align synchronous and asynchronous loopback validation. Incorporated with maintainer revisions via [#1056](https://github.com/czlonkowski/n8n-mcp/pull/1056). |
+| [PostCSS](https://github.com/postcss/postcss/pull/2135) | Correct rule source offsets when whitespace precedes a trailing semicolon. |
+| [Immer](https://github.com/immerjs/immer/pull/1289) | Preserve structural sharing for no-op array operations; refined and merged by the maintainer. |
+| [Cloudflare workers-sdk](https://github.com/cloudflare/workers-sdk/pull/15151) | Fix the generated Wrangler configuration schema's placement of `allowTrailingCommas`. |
 
-**[consilium](https://github.com/maximilliangrand/consilium)** · deterministic orchestration for LLM agent councils: fan out independent hypotheses, adversarially refute each, converge on the survivors. Zero deps, model-agnostic, every pattern unit-testable with a mock.
+Also merged: [commitlint](https://github.com/conventional-changelog/commitlint/pull/4968), [PapaParse](https://github.com/mholt/PapaParse/pull/1140), [electron-builder](https://github.com/electron-userland/electron-builder/pull/10081), and [js-base64](https://github.com/dankogai/js-base64/pull/192).
 
-**[Rustchain](https://github.com/maximilliangrand/rustchain)** · a blockchain from scratch in Rust: heaviest-work consensus with difficulty retargeting and median-time-past, real TCP peer-to-peer, canonical hashing, property + fuzz + multi-node tests, a threat model, 115 tests, clippy clean at `-D warnings`.
+## Tools and Languages
 
-Also: **[Forge](https://github.com/maximilliangrand/forge)** (local GPU AI media tooling), **[BrainVault](https://github.com/maximilliangrand/brainvault)**, **[OpenBuild](https://github.com/maximilliangrand/openbuild)**, **[Code Translator](https://github.com/maximilliangrand/code-translator)**.
+TypeScript / JavaScript, Python, Rust · Node.js, PostgreSQL, Next.js · LLM tool calling, prompt caching, agent memory, evaluation harnesses, and API integrations.
 
-## Stack
-
-`TypeScript` `Python` `Rust` · `Node` `Next.js` `Electron` `Tauri` · MCP servers and agentic systems, RAG, ElevenLabs voice · post-quantum readiness (FIPS 203/204/205), agent red-teaming, sandbox and capability design
-
-<sub>Vienna, Austria · English / German / Russian · Overwatch Top 500, former pro-league competitor</sub>
+English · conversational German (B1/B2) · Russian
