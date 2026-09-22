@@ -1,34 +1,42 @@
 # Maxim Gagiev
 
-**AI and backend engineer based in Vienna.** I build LLM and voice applications, agent tooling, and the services behind them. Co-founder of [MYG Media](https://myg-media.com). Open to AI engineering and backend roles.
+**Software developer · AI agents, backend systems and developer tools**
+
+I build tools for reliable autonomous work and contribute focused fixes to open-source infrastructure. Open to AI engineering and backend roles.
 
 [Portfolio](https://maxim-gagiev.pages.dev) · [LinkedIn](https://www.linkedin.com/in/maxim-gagiev/) · [Email](mailto:max@myg-media.com)
 
-## Selected Work
+## GitHub stats
 
-- **[Nightshift](https://github.com/maximilliangrand/nightshift)**: a supervisor for unattended agent processes, with runtime limits, usage metering, process cleanup, and run reports. Its failure-case suite and documentation cover platform and metering limitations.
-- **[Urfael](https://github.com/maximilliangrand/urfael)**: a local personal assistant with persistent memory, voice, and restricted tool access for untrusted messages. Includes a threat model, automated tests, and a separately run live security benchmark. A personal project, not an independently audited security product.
-- **[Rustchain](https://github.com/maximilliangrand/rustchain)**: an educational Rust blockchain with heaviest-work fork choice, signed transactions, property tests, and multi-node tests over TCP.
+| Merged upstream PRs | Repositories with merged PRs | Public projects |
+| :---: | :---: | :---: |
+| **[17](https://github.com/pulls?q=is%3Apr+author%3Amaximilliangrand+is%3Amerged+is%3Apublic+-user%3Amaximilliangrand)** | **16** | **[12](https://github.com/maximilliangrand?tab=repositories&type=source)** |
 
-For client work, see [a support assistant built around grounding and human handoff](case-studies/support-assistant.md). The anonymized account explains my implementation responsibilities, why I used prompt caching instead of a vector database, and what the recorded evaluation does and does not establish.
+Public activity verified on September 22, 2026. Upstream counts exclude my own repositories; project counts exclude forks and this profile repository.
 
-## Accepted Upstream Contributions
+## Selected merged contributions
 
-I investigate reproducible failures, add regression tests, and work through maintainer review. Selected examples:
-
-| Project | Contribution |
+| Project | What improved |
 | --- | --- |
-| [Hermes Agent](https://github.com/NousResearch/hermes-agent/pull/104805) | Preserve completed background-process results across a headless parent's exit. Commits incorporated via [#104949](https://github.com/NousResearch/hermes-agent/pull/104949), with maintainer follow-up fixes. |
-| [jose](https://github.com/panva/jose/pull/895) | Recheck JWE header disjointness after generated key-management parameters are added, including the multi-recipient path. |
-| [n8n-mcp](https://github.com/czlonkowski/n8n-mcp/pull/1040) | Align synchronous and asynchronous loopback validation. Incorporated with maintainer revisions via [#1056](https://github.com/czlonkowski/n8n-mcp/pull/1056). |
-| [PostCSS](https://github.com/postcss/postcss/pull/2135) | Correct rule source offsets when whitespace precedes a trailing semicolon. |
-| [Immer](https://github.com/immerjs/immer/pull/1289) | Preserve structural sharing for no-op array operations; refined and merged by the maintainer. |
-| [Cloudflare workers-sdk](https://github.com/cloudflare/workers-sdk/pull/15151) | Fix the generated Wrangler configuration schema's placement of `allowTrailingCommas`. |
+| [Cloudflare Workers SDK](https://github.com/cloudflare/workers-sdk/pull/15151) | Fixed false trailing-comma errors in the editor for Wrangler JSONC configuration. |
+| [ioredis](https://github.com/redis/ioredis/pull/2198) | Closed leaked Sentinel subscription connections that could prevent processes from exiting after `quit()`. |
+| [jose](https://github.com/panva/jose/pull/895) | Rejected conflicting generated JWE headers before producing an invalid encrypted token. |
+| [Immer](https://github.com/immerjs/immer/pull/1289) | Preserved structural sharing for no-op array operations; refined and merged by the maintainer. |
 
-Also merged: [commitlint](https://github.com/conventional-changelog/commitlint/pull/4968), [PapaParse](https://github.com/mholt/PapaParse/pull/1140), [electron-builder](https://github.com/electron-userland/electron-builder/pull/10081), and [js-base64](https://github.com/dankogai/js-base64/pull/192).
+Each link includes the implementation, regression tests and review history. [Browse all merged PRs →](https://github.com/pulls?q=is%3Apr+author%3Amaximilliangrand+is%3Amerged+is%3Apublic+-user%3Amaximilliangrand)
 
-## Tools and Languages
+## Projects
 
-TypeScript / JavaScript, Python, Rust · Node.js, PostgreSQL, Next.js · LLM tool calling, prompt caching, agent memory, evaluation harnesses, and API integrations.
+| Project | Focus | Stack |
+| --- | --- | --- |
+| [Nightshift](https://github.com/maximilliangrand/nightshift) | Supervision for unattended agent processes: runtime limits, usage tracking, cleanup and run reports. | TypeScript · Node.js |
+| [Urfael](https://github.com/maximilliangrand/urfael) | Local AI assistant with voice, persistent memory, coding tools and restricted tool profiles. | JavaScript · Node.js |
+| [Rustchain](https://github.com/maximilliangrand/rustchain) | Educational blockchain with proof-of-work consensus, signed transactions and TCP peer networking. | Rust |
 
-English · conversational German (B1/B2) · Russian
+## Technical focus
+
+- **Languages:** TypeScript, JavaScript, Python, Rust
+- **Backend & web:** Node.js, PostgreSQL, Next.js
+- **AI engineering:** tool calling, agent memory, prompt caching, evaluation harnesses and API integrations
+
+I focus on reproducible bugs, clear ownership, small changes and tests that demonstrate the behavior before and after a fix.
