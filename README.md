@@ -4,15 +4,15 @@
 
 I build tools for reliable autonomous work and contribute focused fixes to open-source infrastructure. Open to AI engineering and backend roles.
 
-[Portfolio](https://maxim-gagiev.pages.dev) · [LinkedIn](https://www.linkedin.com/in/maxim-gagiev/) · [Email](mailto:max@myg-media.com)
+[Portfolio](https://maxim-gagiev.pages.dev) · [LinkedIn](https://www.linkedin.com/in/maxim-gagiev/) · [Email](mailto:maximgagievv@gmail.com)
 
 ## GitHub stats
 
 | Merged upstream PRs | Repositories with merged PRs | Public projects |
 | :---: | :---: | :---: |
-| **[17](https://github.com/pulls?q=is%3Apr+author%3Amaximilliangrand+is%3Amerged+is%3Apublic+-user%3Amaximilliangrand)** | **16** | **[12](https://github.com/maximilliangrand?tab=repositories&type=source)** |
+| **[19](https://github.com/pulls?q=is%3Apr+author%3Amaximilliangrand+is%3Amerged+is%3Apublic+-user%3Amaximilliangrand)** | **17** | **[14](https://github.com/maximilliangrand?tab=repositories&type=source)** |
 
-Public activity verified on September 22, 2026. Upstream counts exclude my own repositories; project counts exclude forks and this profile repository.
+Public activity verified on September 26, 2026. Upstream counts exclude my own repositories; project counts exclude forks and this profile repository.
 
 ## Selected merged contributions
 
@@ -29,7 +29,10 @@ Each link includes the implementation, regression tests and review history. [Bro
 
 | Project | Focus | Stack |
 | --- | --- | --- |
+| [Replan](https://github.com/maximilliangrand/replan) | Recovers approved operations when a carrier's reply is lost or stock changes mid-run, proven with fault-injection and restart tests. | TypeScript · Python · PostgreSQL |
 | [Nightshift](https://github.com/maximilliangrand/nightshift) | Supervision for unattended agent processes: runtime limits, usage tracking, cleanup and run reports. | TypeScript · Node.js |
+| [Cryptosweep](https://github.com/maximilliangrand/cryptosweep) | Post-quantum migration scanner: finds quantum-vulnerable cryptography in code, dependencies and TLS; outputs CycloneDX CBOM and SARIF. | TypeScript · Node.js |
+| [Consilium](https://github.com/maximilliangrand/consilium) | Typed, model-agnostic orchestration for LLM agent councils: fan out, refute, converge. | TypeScript |
 | [Urfael](https://github.com/maximilliangrand/urfael) | Local AI assistant with voice, persistent memory, coding tools and restricted tool profiles. | JavaScript · Node.js |
 | [Rustchain](https://github.com/maximilliangrand/rustchain) | Educational blockchain with proof-of-work consensus, signed transactions and TCP peer networking. | Rust |
 
