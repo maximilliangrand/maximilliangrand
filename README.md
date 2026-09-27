@@ -10,7 +10,7 @@ I build tools for reliable autonomous work and contribute focused fixes to open-
 
 | Merged upstream PRs | Repositories with merged PRs | Public projects |
 | :---: | :---: | :---: |
-| **[19](https://github.com/pulls?q=is%3Apr+author%3Amaximilliangrand+is%3Amerged+is%3Apublic+-user%3Amaximilliangrand)** | **17** | **[14](https://github.com/maximilliangrand?tab=repositories&type=source)** |
+| **[19](https://github.com/search?q=is%3Apr+author%3Amaximilliangrand+is%3Amerged+-user%3Amaximilliangrand&type=pullrequests)** | **17** | **[14](https://github.com/maximilliangrand?tab=repositories&type=source)** |
 
 Public activity verified on September 26, 2026. Upstream counts exclude my own repositories; project counts exclude forks and this profile repository.
 
@@ -23,7 +23,7 @@ Public activity verified on September 26, 2026. Upstream counts exclude my own r
 | [jose](https://github.com/panva/jose/pull/895) | Rejected conflicting generated JWE headers before producing an invalid encrypted token. |
 | [Immer](https://github.com/immerjs/immer/pull/1289) | Preserved structural sharing for no-op array operations; refined and merged by the maintainer. |
 
-Each link includes the implementation, regression tests and review history. [Browse all merged PRs →](https://github.com/pulls?q=is%3Apr+author%3Amaximilliangrand+is%3Amerged+is%3Apublic+-user%3Amaximilliangrand)
+Each link includes the implementation, regression tests and review history. [Browse all merged PRs →](https://github.com/search?q=is%3Apr+author%3Amaximilliangrand+is%3Amerged+-user%3Amaximilliangrand&type=pullrequests)
 
 ## Projects
 
