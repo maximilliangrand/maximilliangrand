@@ -10,14 +10,15 @@ I build tools for reliable autonomous work and contribute focused fixes to open-
 
 | Merged upstream PRs | Repositories with merged PRs | Public projects |
 | :---: | :---: | :---: |
-| **[19](https://github.com/search?q=is%3Apr+author%3Amaximilliangrand+is%3Amerged+-user%3Amaximilliangrand&type=pullrequests)** | **17** | **[14](https://github.com/maximilliangrand?tab=repositories&type=source)** |
+| **[20](https://github.com/search?q=is%3Apr+is%3Apublic+author%3Amaximilliangrand+is%3Amerged+-user%3Amaximilliangrand&type=pullrequests)** | **18** | **[14](https://github.com/maximilliangrand?tab=repositories&type=source)** |
 
-Public activity verified on September 26, 2026. Upstream counts exclude my own repositories; project counts exclude forks and this profile repository.
+Public activity verified on September 28, 2026. Upstream counts exclude my own repositories; project counts exclude forks and this profile repository.
 
 ## Selected merged contributions
 
 | Project | What improved |
 | --- | --- |
+| [Meta Lexical](https://github.com/facebook/lexical/pull/9247) | Fixed line deletion stopping inside inline widgets, with regression tests across Chromium, Firefox and WebKit. [Technical case study](case-studies/lexical-line-deletion.md). |
 | [Cloudflare Workers SDK](https://github.com/cloudflare/workers-sdk/pull/15151) | Fixed false trailing-comma errors in the editor for Wrangler JSONC configuration. |
 | [ioredis](https://github.com/redis/ioredis/pull/2198) | Closed leaked Sentinel subscription connections that could prevent processes from exiting after `quit()`. |
 | [jose](https://github.com/panva/jose/pull/895) | Rejected conflicting generated JWE headers before producing an invalid encrypted token. |
